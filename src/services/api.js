@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const serverURl = "http://localhost:8080";
+const serverURl = "https://server-finvest.onrender.com/";
 
 export const getDishes = async () => {
   return await axios.get(`${serverURl}`);
