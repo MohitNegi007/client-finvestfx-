@@ -70,12 +70,10 @@ const Categories = ({ data }) => {
     return (
       <div>
         {editing ? (
-          <input
-            type="number"
-            value={price}
-            onChange={handleInputChange}
-            onBlur={saveChanges}
-          />
+          <>
+            <input type="number" value={price} onChange={handleInputChange} />
+            <button onClick={saveChanges}>save</button>
+          </>
         ) : (
           <span onClick={toggleEditing}>{value}</span>
         )}
