@@ -47,7 +47,7 @@ function App() {
 
       {/* categories */}
       <div>
-        <h1>All Categories</h1>
+        <h1>Select Categorie</h1>
         <div>
           <Suspense fallback="Loading ...">
             {allDishes.length > 0 ? (
